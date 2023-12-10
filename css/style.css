@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: #2A2A2A;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+}
+
+main {
+    overflow: hidden;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.container {
+    max-width: 1780px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header-top {
+    padding: 34px 0 17px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2A2A2A;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.header-top__list {
+    display: flex;
+    gap: 0 50px;
+}
+
+.header-center {
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 141px;
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.header-center__list {
+    display: flex;
+    margin-right: 559px;
+    font-size: 20px;
+    font-weight: 400;
+    gap: 0 48px;
+}
+
+.header-contacts {
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.header-contacts__item-telegram {
+    margin-right: 10px;
+}
+
+.header-contacts__item-whatsapp {
+    margin-right: 20px;
+}
+
+.price-auto {
+    padding-top: 158px;
+    color: #2A2A2A;
+}
+
+.price-auto__wrapper {
+    display: flex;
+}
+
