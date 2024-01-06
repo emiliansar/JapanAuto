@@ -104,3 +104,86 @@ body {
     display: flex;
 }
 
+.price-auto__text {
+}
+
+.price-auto__title {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    max-width: 655px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.price-auto__title span {
+    color: #00558D;
+}
+
+.brand {
+    max-width: 334px;
+}
+
+.brand-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.price-auto__nav {
+    position: relative;
+    display: flex;
+    gap: 0 220px;
+    border-bottom: 1px solid #2A2A2A;
+    padding: 20px;
+}
+
+.price-auto__conf {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 29px 85px;
+}
+
+.brand-input {
+    font-weight: 400;
+}
+
+.brand-btn {
+    transition: transform .3s;
+}
+
+.brand-btn__active {
+    transform: rotate(-180deg);
+    transition: transform .3s;
+}
+
+.brand-list {
+    display: none;
+    position: absolute;
+    top: 69px;
+    left: 0;
+    padding: 15px 0;
+    flex-direction: column;
+    gap: 7px 0;
+    width: 332px;
+    text-align: left;
+    border: 1px solid #00558D;
+    border-top: none;
+    border-radius: 0 0 25px 25px;
+    z-index: 1;
+    background-color: #fff;
+    font-weight: 400;
+}
+
+.brand-list__open {
+    display: flex;
+}
+
+.brand-list li {
+    padding: 0 15px;
+}
+
+.brand-list li:hover {
+    background-color: blue;
+    color: #fff;
+}
