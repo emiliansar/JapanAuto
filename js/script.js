@@ -1,16 +1,31 @@
-let btn = document.querySelector('.brand-btn');
-let brandList = document.querySelector('.brand-list');
+let btnBrand = document.querySelector('.brand-auto__list-btn');
+let priceAutoListBrand = document.querySelector('.brand-auto__list');
 
-let brandInput = document.querySelector('.brand-input');
-document.querySelector('.brand-item').addEventListener('click', valueInput);
-
-btn.addEventListener('click', function() {
-    brandList.classList.toggle('brand-list__open');
-    btn.classList.toggle('brand-btn__active')
+btnBrand.addEventListener('click', function() {
+    priceAutoListBrand.classList.toggle('price-auto__list__open');
+    btnBrand.classList.toggle('price-auto__btn__active');
 });
 
-function valueInput() {
-    let brandItem = document.querySelector('.brand-item');
+let btnModel = document.querySelector('.model-auto__list-btn');
+let priceAutoListModel = document.querySelector('.model-auto__list');
 
-    brandInput.innerHTML = brandItem.value;
-}
+btnModel.addEventListener('click', function() {
+    priceAutoListModel.classList.toggle('price-auto__list__open');
+    btnModel.classList.toggle('price-auto__btn__active');
+});
+
+let btnYear = document.querySelector('.year-auto__list-btn');
+let priceAutoListYear = document.querySelector('.year-auto__list');
+
+btnYear.addEventListener('click', function() {
+    priceAutoListYear.classList.toggle('price-auto__list__open');
+    btnYear.classList.toggle('price-auto__btn__active');
+});
+
+let btnBudget = document.querySelector('.budget-auto__list-btn');
+let priceAutoListBudget = document.querySelector('.budget-auto__list');
+
+btnBudget.addEventListener('click', function() {
+    priceAutoListBudget.classList.toggle('price-auto__list__open');
+    btnBudget.classList.toggle('price-auto__btn__active');
+});
