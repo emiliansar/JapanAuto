@@ -29,3 +29,17 @@ btnBudget.addEventListener('click', function() {
     priceAutoListBudget.classList.toggle('price-auto__list__open');
     btnBudget.classList.toggle('price-auto__btn__active');
 });
+
+let catList = document.querySelector('.catalog-list__2');
+let catBtn = document.querySelector('.catalog-add__btn');
+
+catBtn.addEventListener('click', function() {
+    catList.classList.toggle('catalog-list__active');
+    catBtn.classList.toggle('catalog-add__btn__active');
+});
+
+let auction = document.querySelector('.auction-start__in');
+
+auction.addEventListener('click', function() {
+    window.location.replace("https://youtube.com/");
+});

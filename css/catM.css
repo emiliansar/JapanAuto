@@ -1,0 +1,217 @@
+body {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #2A2A2A;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding: 78px 80px 122px 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 139px;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 49px;
+    max-width: 691px;
+}
+
+.specifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px 0;
+    margin-bottom: 36px;
+}
+
+.specifications-item {
+    display: flex;
+    justify-content: space-between;
+    max-width: 647px;
+    padding: 6px 0;
+    position: relative;
+    align-items: center;
+}
+
+.specifications-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #00558D;
+    opacity: 0.2;
+}
+
+.specifications-title {
+    font-size: 24px;
+    color: #2A2A2A;
+    opacity: 0.5;
+}
+
+.specifications-descr {
+    font-size: 24px;
+}
+
+.price-in__locate {
+    max-width: 639px;
+    border: 1px solid #2A2A2A;
+    border-radius: 25px;
+    padding: 15px 0 15px 34px;
+    margin-bottom: 100px;
+}
+
+.price-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price-descr {
+    display: none;
+}
+
+.price-descr__active {
+    display: block;
+    font-size: 50px;
+    color: #CF1013;
+    margin-bottom: 16px;
+}
+
+.price-list__button {
+    display: flex;
+    gap: 0 10px;
+}
+
+.price-btn {
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #00558D;
+    font-size: 24px;
+}
+
+.price-btn__active {
+    background-color: #00558D;
+    color: #fff;
+}
+
+.more {
+    max-width: 642px;
+}
+
+.more-btn {
+    display: flex;
+    gap: 0 29px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.more-item-btn {
+    margin-bottom: 11px;
+    border: 0;
+    background-color: transparent;
+}
+
+.more-item-btn__bar {
+    display: inline-block;
+    width: 100%;
+    height: 6px;
+    background-color: #DEDEDE;
+    border-radius: 3px;
+}
+
+.more-active-btn__bar {
+    background-color: #CF1013;
+}
+
+.more-item-btn__text {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.more-review {
+    display: none;
+    margin: 0 auto;
+}
+
+.more-active {
+    display: block;
+}
+
+.more-descr {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.descr-text {
+    width: 100%;
+}
+
+.spec-list {
+    width: 100%;
+}
+
+.spec-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.item-name {
+    opacity: 0.5;
+    padding: 24px 12px;
+    max-width: 321px;
+}
+
+.item-conf {
+    padding: 24px 12px;
+    max-width: 321px;
+}
+
+.review {
+    width: 100%;
+}
+
+.machine-review__wrapper {
+    width: 100%;
+}
+
+.main-review {
+    margin-bottom: 19px;
+}
+
+.main-review__img {
+    margin: 0 auto;
+}
+
+.main-review__active {
+    display: block;
+}
+
+.main-review__disactive {
+    display: none;
+}
+
+.compilation-review {
+    display: flex;
+    gap: 0 28px;
+}
+
+.compilation-review__active {
+    display: block;
+}
+
+.compilation-review__disactive {
+    display: none;
+}
+
+.compilation-review__img {
+    border: 0;
+    background-color: transparent;
+}
