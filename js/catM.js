@@ -27,7 +27,7 @@ function open(evt) {
 
 let review = document.querySelectorAll('.more-review');
 let moreBtn = document.querySelectorAll('.more-item-btn');
-let span = document.querySelectorAll('.more-item-btn__bar');
+let span = document.querySelectorAll('.more-item-btn__bar')
 
 moreBtn.forEach(function(element) {
     element.addEventListener('click', active);
@@ -55,24 +55,4 @@ function active(evt) {
     contentActive.forEach(function(item) {
         item.classList.add('more-active')
     })
-}
-
-let reviewBtn = document.querySelectorAll('.compilation-review__img');
-let reviewImg = document.querySelectorAll('.main-review__img');
-
-reviewBtn.forEach(function(element) {
-    element.addEventListener('click', review);
-});
-
-function review(evt) {
-    let target = evt.correntTarget;
-    let button = target.dataset.button;
-    let mainReview = document.querySelectorAll(`.${button}`);
-
-    reviewBtn.forEach(function(item) {
-        // item.classList.remove('compilation-review__disactive');
-        item.classList.add('compilation-review__active');
-    });
-    
-    target.classList.add('compilation-review__disactive');
 }
